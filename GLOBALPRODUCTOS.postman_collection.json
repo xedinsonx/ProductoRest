@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "197e687e-6bd4-494a-8dec-51132aec3be6",
+		"name": "GLOBALPRODUCTOS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "25997738",
+		"_collection_link": "https://www.postman.com/technical-candidate-18095104/workspace/financiera/collection/25997738-197e687e-6bd4-494a-8dec-51132aec3be6?action=share&source=collection_link&creator=25997738"
+	},
+	"item": [
+		{
+			"name": "RegistrarProductos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\":\"Laptop\",\r\n    \"marca\":\"Asus\",\r\n    \"modelo\":\"VivoBook\",\r\n    \"precio\":5000,\r\n    \"fecha\":\"2024-01-18\"\r\n}\r\n        \r\n        \r\n    ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8181/producto/nuevo"
+			},
+			"response": []
+		},
+		{
+			"name": "ListarProductos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8181/producto/lista"
+			},
+			"response": []
+		}
+	]
+}
